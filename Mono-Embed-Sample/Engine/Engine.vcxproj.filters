@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{64c71d01-5d49-4d15-8125-8392c2362376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{f9066bb7-ccad-4e59-b93d-a82aad806b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{755504d9-12f8-4f3c-b832-f048797447d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptingSystem">
+      <UniqueIdentifier>{e65105a7-2c1a-4ad9-b805-2e69c18e2c33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleECS.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptingSystem.cpp">
+      <Filter>ScriptingSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleECS.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="SLivesEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptingSystem.h">
+      <Filter>ScriptingSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
