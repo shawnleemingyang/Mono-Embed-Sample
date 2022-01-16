@@ -1,6 +1,10 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
+#include "ScriptingSystem.h"
+
+#include <memory>
+
 namespace SLives
 {
 	class Application
@@ -9,6 +13,9 @@ namespace SLives
 		void Startup();
 		void GameLoop();
 		void Shutdown();
+
+	private:
+		std::shared_ptr<ScriptingSystem> mScriptingSystem{ nullptr };
 	};
 	
 	extern Application application;

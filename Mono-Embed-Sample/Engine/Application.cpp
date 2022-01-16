@@ -3,28 +3,28 @@
 
 #include <iostream>
 #include <string>
+#include <memory>
 
 namespace SLives
 {
 	void Application::Startup()
 	{
-		std::cout << "Application Startup...\n";
-
-		// Test ECS
-		/*ECS::AddData(std::string{ "Data0" });
-		ECS::PrintData();*/
-
-		//! Testing Mono setup
+		std::cout << "[C/C++] Running Engine's Startup()\n";
+		ECS::AddData("Data 0: Added from Engine.");
+		mScriptingSystem = std::make_shared<ScriptingSystem>();
+		mScriptingSystem->Startup();
 		
+		
+
 	}
 
 	void Application::GameLoop()
 	{
-		std::cout << "Fake gameloop\n";
+		std::cout << "\n[C/C++] Running Engine's GameLoop()\n";
 	}
 
 	void Application::Shutdown()
 	{
-		std::cout << "Shutdown\n";
+		std::cout << "\n[C/C++] Running Engine's Shutdown()\n";
 	}
 }
