@@ -4,8 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)bin\$(ConfigurationName)\$(PlatformName)\Application\Scripts&quot; /e /i /y" />
-  </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\ScriptAPI\ScriptAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ScriptAPI">
+      <HintPath>..\ScriptAPI\bin\Debug\net5.0\ScriptAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

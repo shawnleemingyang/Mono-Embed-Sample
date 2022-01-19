@@ -6,9 +6,17 @@
 
 namespace SLives
 {
+
+	struct Vector3
+	{
+		float x, y, z;
+	};
+
 	void CPrintData();
 
 	void CAddData(MonoString* _data);
+
+	void CTestPrint();
 }
 
 #endif
