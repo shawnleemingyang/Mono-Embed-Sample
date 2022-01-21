@@ -19,4 +19,5 @@ namespace SLives
 	{
 		std::cout << "Hello Internal Call!\n";
 	}
+
 }

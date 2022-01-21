@@ -14,7 +14,7 @@ namespace SLives
 		void GameLoop();
 		void Shutdown();
 
-	private:
+	public:
 		std::shared_ptr<ScriptingSystem> mScriptingSystem{ nullptr };
 	};
 	

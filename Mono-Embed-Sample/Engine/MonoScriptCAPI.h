@@ -17,6 +17,8 @@ namespace SLives
 	void CAddData(MonoString* _data);
 
 	void CTestPrint();
+
+	//MonoObject* CReturnVec3();
 }
 
 #endif

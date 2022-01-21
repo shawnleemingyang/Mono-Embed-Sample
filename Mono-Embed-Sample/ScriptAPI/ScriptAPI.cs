@@ -5,14 +5,16 @@ namespace ScriptAPI
 {
     public class Vector3
     {
-        float x, y, z;
+        public float xData;
+        public float yData;
+        public float zData;
 
-        public Vector3(float _x, float _y, float _z)
-        {
-            x = _x;
-            y = _y;
-            z = _z;
-        }
+        //public Vector3(float _x, float _y, float _z)
+        //{
+        //    x = _x;
+        //    y = _y;
+        //    z = _z;
+        //}
     }
 
     public class ScriptAPIClass
@@ -20,6 +22,9 @@ namespace ScriptAPI
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern void TestPrint();
 
-        public static Vector3 ReturnVec3() { Vector3 retval = new Vector3(1.0f, 2.0f, 3.0f); return retval; }
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        public static extern Vector3 ReturnVec3();
+
+        
     }
 }

@@ -13,13 +13,8 @@ namespace MonoScript
         public void OnAwake()
         {
             Console.WriteLine("Calling OnAwake()\n");
-            ScriptAPIClass.TestPrint();
-        }
-
-        public Vector3 RetVec3()
-        {
-            Console.WriteLine("Calling RetVec3!\n");
-            return ScriptAPIClass.ReturnVec3();
+            Vector3 myVec = ScriptAPIClass.ReturnVec3();
+            Console.WriteLine($"X: {myVec.xData}, Y: {myVec.yData}, Z: {myVec.zData}\n");
         }
 
     }
